@@ -1,0 +1,19 @@
+name: TradeUps
+version: '${project.version}'
+main: me.kirogr.tradeups.TradeUps
+api-version: '1.21'
+load: STARTUP
+commands:
+  trade:
+    description: Start a trade with another player
+    usage: /trade <player>
+    permission: tradeups.use
+    permission-message: You don't have permission to use this command!
+
+permissions:
+  tradeups.use:
+    description: Allows players to use the trading system
+    default: true
+  tradeups.admin:
+    description: Admin permissions for the trading system
+    default: op
